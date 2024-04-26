@@ -801,6 +801,10 @@
     @media(max-width: 1659px) {
       font-size: rem(14);
     }
+
+    @media(max-width: 1199px) {
+      font-size: 0px;
+    }
   }
 }
 
