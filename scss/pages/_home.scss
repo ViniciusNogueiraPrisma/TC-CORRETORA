@@ -2268,6 +2268,10 @@ footer {
         display: flex;
         flex-direction: column;
 
+        @media (max-width: 642px) {
+          width: 100%;
+        }
+
         img {
           width: 40px;
 
@@ -2303,6 +2307,10 @@ footer {
           font-style: normal;
           font-weight: 400;
           line-height: 140%;
+
+          @media (max-width: 642px) {
+            width: 100%;
+          }
           /* 22.4px */
         }
 
@@ -2352,6 +2360,10 @@ footer {
         position: relative;
         z-index: 10;
         padding-top: 140px;
+      }
+
+      @media (max-width: 768px) {
+        width: 100%;
       }
 
       h4 {
@@ -2444,6 +2456,10 @@ footer {
     padding-bottom: 112px;
   }
 
+  @media (max-width: 784px) {
+    grid-template-columns: 1fr;
+  }
+
   .cards:last-child {
     background-color: #000;
   }
@@ -2502,6 +2518,7 @@ footer {
 
   @media (max-width: 1233px) {
     margin-top: 0px;
+    padding-top: 48px;
   }
 }
 
@@ -2563,6 +2580,15 @@ footer {
         width: 55%;
         margin-left: -65px;
       }
+
+      @media (max-width: 1233px) {
+        margin-left: 0px;
+        width: 50%;
+      }
+
+      @media (max-width: 668px) {
+        width: 100%;
+      }
     }
 
     .other-text {
@@ -2598,6 +2624,12 @@ footer {
         align-items: center;
         margin-top: 48px;
 
+        @media (max-width: 516px) {
+          // flex-direction: column;
+          // align-items: start;
+          margin-bottom: 16px;
+        }
+
         p {
           color: var(--base-text-text-inverse, #fff);
           font-family: var(--font-neue);
@@ -2617,13 +2649,25 @@ footer {
   margin-top: -65px;
   position: relative;
 
+  @media(max-width: 1024px) {
+    padding-top: 112px;
+  }
+ 
   .contents-invista {
     display: flex;
     justify-content: space-between;
     gap: 32px;
 
+    @media (max-width: 1024px) {
+      flex-direction: column;
+    }
+
     .text-inv {
       width: 486px;
+
+      @media (max-width: 1024px) {
+        width: 100%;
+      }
 
       h1 {
         margin: 0;
@@ -2686,12 +2730,12 @@ footer {
   }
 }
 
-.teste {
-  a
-}
-
 .carrosel-invista {
   width: 50%;
+
+  @media (max-width: 1024px) {
+    width: 100%;
+  }
 
   .mySwiper-invest {
     position: initial !important;
@@ -2710,8 +2754,7 @@ footer {
       margin-top: -185px;
       padding-right: 143px;
 
-      @media(max-width: 1860px) {
-        
+      @media (max-width: 1860px) {
       }
 
       .swiper-button-next {
@@ -2754,6 +2797,10 @@ footer {
         display: flex;
         flex-direction: column;
 
+        @media (max-width: 560px) {
+          width: 100% !important;
+        }
+
         .img-vector {
           display: flex;
           justify-content: space-between;
@@ -2793,6 +2840,10 @@ footer {
             font-style: normal;
             font-weight: 400;
             line-height: 140%;
+
+            @media (max-width: 732px) {
+              width: 100%;
+            }
           }
         }
       }
@@ -2804,6 +2855,10 @@ footer {
   right: 265px;
   position: absolute;
   margin-top: -158px;
+
+  @media(max-width: 1024px) {
+    display: none;
+  }
 }
 
 .section-duvida {
@@ -2860,11 +2915,24 @@ footer {
   width: 100%;
   padding-top: 31px;
 
+  @media (max-width: 1260px) {
+    flex-direction: column;
+    gap: 26px;
+  }
+
   .informacoes {
     width: 50%;
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 32px;
+
+    @media (max-width: 1260px) {
+      width: 100%;
+    }
+
+    @media (max-width: 722px) {
+      grid-template-columns: 1fr;
+    }
 
     .social {
       gap: 16px;
@@ -2943,6 +3011,10 @@ footer {
     justify-content: flex-end;
     gap: 32px;
 
+    @media (max-width: 1260px) {
+      display: none;
+    }
+
     .item-nav {
       display: flex;
       flex-direction: column;
@@ -2992,9 +3064,18 @@ footer {
   margin-top: 40px;
   padding-bottom: 40px;
 
+  @media (max-width: 1260px) {
+    flex-direction: column;
+    gap: 24px;
+  }
+
   .text {
     // width: 80%;
     width: 64%;
+
+    @media (max-width: 1260px) {
+      width: 100%;
+    }
 
     p {
       margin: 0;
@@ -3013,6 +3094,10 @@ footer {
     display: flex;
     gap: 8px;
     align-items: center;
+
+    @media (max-width: 500px) {
+      flex-wrap: wrap;
+    }
   }
 }
 
@@ -3021,6 +3106,15 @@ footer {
   justify-content: space-between;
   width: 100%;
   padding: 40px 0px;
+
+  @media (max-width: 604px) {
+    flex-direction: column;
+    gap: 16px;
+
+    img {
+      width: 175px;
+    }
+  }
 
   p {
     color: var(--estrutura-footer-footer-text, #fff);
@@ -3060,6 +3154,18 @@ footer {
 
     .swiper-slide {
       width: 348px !important;
+
+      @media(max-width: 400px) {
+        width: 100% !important;
+      }
     }
+  }
+}
+
+.footer-fixed {
+  display: none;
+
+  @media (max-width: 1260px) {
+    display: block;
   }
 }

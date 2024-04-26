@@ -481,7 +481,7 @@
     height: 2px;
     width: 21px;
     display: block;
-    background-color: var(--pure-black);
+    background-color: #fff;
     transition: 0.5s ease;
     position: relative;
 
@@ -495,7 +495,7 @@
       display: block;
       position: absolute;
       // background: var(--text-white);
-      background-color: var(--pure-black);
+      background-color: #fff;
       transition: 0.5s ease;
     }
 
@@ -572,11 +572,11 @@
 
       .toggle-mobile-menu {
         .icon-nav {
-          background-color: var(--text-color);
+          background-color: #fff;
 
           &::after,
           &::before {
-            background-color: var(--text-color);
+            background-color: #fff;
           }
         }
       }
@@ -778,6 +778,10 @@
 
     @media(max-width: 1659px) {
       font-size: rem(14);
+    }
+
+    @media(max-width: 1199px) {
+      display: none;
     }
   }
 

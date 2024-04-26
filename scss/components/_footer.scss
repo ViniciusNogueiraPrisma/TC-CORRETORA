@@ -92,29 +92,23 @@
     .button-mapa-site {
       background: none;
       border: none;
-      align-items: center;
       gap: 16px;
       padding: 0;
       display: flex;
       color: #fff;
 
-      font-family: "Arial";
+      font-family: var(--font-neue);
       font-size: 14px;
       font-style: normal;
-      // font-weight: 700;
-      line-height: 132%;
+      line-height: 140%;
 
       @media (max-width: 375px) {
         justify-content: center;
       }
 
-      span {
-        // font-size: 14px !important;
-      }
-
       i {
         transition: 0.3s ease;
-        font-size: rem(12);
+        font-size: rem(16);
       }
 
       &.active {
@@ -130,7 +124,7 @@
     gap: 42px;
     width: 100%;
 
-    margin-top: 16px;
+    margin-top: 24px;
     margin-bottom: 16px;
 
     &.show {
@@ -151,14 +145,19 @@
       }
 
       h5 {
-        color: #fff;
-        font-family: "Sofia Sans", sans-serif;
-        font-size: 20px;
-        font-weight: 700;
-        line-height: 120%;
         padding: 0;
         margin: 0;
         margin-bottom: 24px;
+
+        display: flex;
+        gap: 12px;
+
+        color: var(--estrutura-footer-footer-text, #fff);
+        font-family: var(--font-neue);
+        font-size: rem(12);
+        font-style: normal;
+        font-weight: 700;
+        line-height: 124%;
 
         @media (max-width: 375px) {
           // text-align: center;
@@ -182,33 +181,23 @@
             align-items: center;
             gap: 8px;
             margin-bottom: 6px;
-
-            color: #fff;
-            font-size: 16px;
-            font-family: Arial;
-            font-weight: 400;
-            line-height: 24px;
-            word-wrap: break-word;
             margin: 0;
             padding: 0;
+
+            color: var(--estrutura-footer-footer-text, #fff);
+            font-family: var(--font-neue);
+            font-size: rem(14);
+            font-style: normal;
+            font-weight: 400;
+            line-height: 140%;
 
             &:hover {
               text-decoration: underline;
             }
 
             @media (max-width: 375px) {
-              // justify-content: center;
             }
           }
-          /*
-                    &.link-externo {
-                        a {
-                            &::after {
-                                content: url("../../images/icon/icon-externo.svg");
-                                height: 16px;
-                            }
-                        }
-                    }*/
         }
       }
     }
@@ -256,7 +245,7 @@
 
 @media (max-width: 1659px) {
   footer {
-    padding: 64px 0px !important;
+    // padding: 64px 0px !important;
 
     .container {
       // padding: 0 !important;
