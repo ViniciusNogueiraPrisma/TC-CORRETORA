@@ -1,0 +1,23 @@
+<svg width="30" height="194" viewBox="0 0 30 194" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="30" height="194" fill="#E6EBF3"/>
+<g id="1. Home" clip-path="url(#clip0_319_913)">
+<rect width="1920" height="5727" transform="translate(-256 -2660)" fill="#1E1E20"/>
+<g id="Passos">
+<rect width="1920" height="764" transform="translate(-256 -737)" fill="#1E1E20"/>
+<rect id="bg-bottom-fix" x="-256" y="-173" width="1920" height="200" fill="#8148E4"/>
+</g>
+<g id="Download app">
+<rect width="1920" height="500" transform="translate(-256 27)" fill="#8148E4"/>
+<g id="card-app">
+<g id="content">
+<path id="Arrow 1" d="M13.5858 193.414C14.3668 194.195 15.6332 194.195 16.4142 193.414L29.1421 180.686C29.9232 179.905 29.9232 178.639 29.1421 177.858C28.3611 177.077 27.0948 177.077 26.3137 177.858L15 189.172L3.6863 177.858C2.90525 177.077 1.63892 177.077 0.857872 177.858C0.0768234 178.639 0.0768235 179.905 0.857872 180.686L13.5858 193.414ZM13 8.74228e-08L13 192L17 192L17 -8.74228e-08L13 8.74228e-08Z" fill="white"/>
+</g>
+</g>
+</g>
+</g>
+<defs>
+<clipPath id="clip0_319_913">
+<rect width="1920" height="5727" fill="white" transform="translate(-256 -2660)"/>
+</clipPath>
+</defs>
+</svg>
