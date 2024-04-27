@@ -1308,6 +1308,10 @@
     gap: 16px;
     border-bottom: 1px solid #d1d1d6 !important;
 
+    @media(max-width: 864px) {
+      // flex-direction: column;
+    }
+
     @media (max-width: 598px) {
       gap: 16px;
     }
@@ -1335,7 +1339,7 @@
         text-decoration: none;
 
         @media (max-width: 900px) {
-          font-size: 21px;
+          // font-size: 21px;
         }
       }
     }
