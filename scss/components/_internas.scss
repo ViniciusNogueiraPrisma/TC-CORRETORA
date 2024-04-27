@@ -1301,24 +1301,23 @@
 }
 
 .tab-pane-sis {
+  padding-top: 80px;
+
   .nav-tabs {
     display: flex;
-    gap: 40px;
-    border-bottom: 1px solid #999999 !important;
+    gap: 16px;
+    border-bottom: 1px solid #d1d1d6 !important;
 
     @media (max-width: 598px) {
       gap: 16px;
     }
 
-    // @media (max-width: 1187px) {
-    //   border-bottom: unset !important;
-    // }
-
     li {
       a.active {
         transition: 0.5s;
-        color: #00df81 !important;
-        border-bottom: 2px solid #00df81;
+        color: #7240c9 !important;
+        border-bottom: 1px solid #7240c9;
+        padding-bottom: 9px;
 
         @media (max-width: 389px) {
           border-bottom: unset;
@@ -1327,12 +1326,11 @@
 
       a {
         padding-bottom: 8px;
-        // border-bottom: 1px solid #999999;
-        color: #999999;
-        font-size: 23px;
-        font-family: "Sofia Sans", sans-serif;
-        font-weight: 500;
-        line-height: 27.6px;
+        color: #d1d1d6;
+        font-size: rem(16);
+        font-family: var(--font-seido);
+        font-weight: 700;
+        line-height: 124%;
         word-wrap: break-word;
         text-decoration: none;
 
@@ -1349,45 +1347,114 @@
     .tab-pane {
       .title-tab-content {
         margin-bottom: 40px;
+        width: 712px;
+
+        @media (max-width: 991px) {
+          width: 100%;
+          margin-bottom: 62px;
+        }
 
         h3 {
           margin: 0;
           padding: 0;
 
           padding-bottom: 24px;
-          color: #1e524f;
-          font-size: 35px;
-          font-family: "Sofia Sans", sans-serif;
+          color: #0c0c0d;
+          font-size: rem(28);
+          font-family: var(--font-seido);
           font-weight: 400;
           line-height: 42px;
           word-wrap: break-word;
-
-          @media (max-width: 1187px) {
-            font-size: 31px;
-          }
         }
 
         p {
           margin: 0;
           padding: 0;
 
-          color: #333333;
-          font-size: 26px;
-          font-family: "Sofia Sans", sans-serif;
+          color: #3a3a3c;
+          font-size: rem(16);
+          font-family: var(--font-neue);
           font-weight: 400;
-          line-height: 31.2px;
+          line-height: 140%;
           word-wrap: break-word;
-
-          @media (max-width: 1187px) {
-            font-size: 21px;
-          }
         }
       }
 
       .main-content {
-        display: flex;
-        justify-content: space-between;
-        gap: 24px;
+        // display: flex;
+        // justify-content: space-between;
+        // gap: 24px;
+
+        .swiper-pagination {
+          position: relative;
+          margin-bottom: 64px;
+
+          .swiper-pagination-bullet {
+            border-radius: 5px;
+            transition: 0.5s;
+            background-color: #8148e4;
+            opacity: 0.8;
+            margin: 0 var(--swiper-pagination-bullet-horizontal-gap, 7px) !important;
+          }
+
+          .swiper-pagination-bullet-active {
+            background-color: #8148e4 !important;
+            transition: 0.5s;
+            width: 75px;
+            opacity: 1 !important;
+          }
+        }
+
+        .cards-invest {
+          width: 100% !important;
+          display: grid !important;
+          grid-template-columns: 1fr 1fr 1fr !important;
+          gap: 48px !important;
+          padding-bottom: 112px;
+
+          @media (max-width: 991px) {
+            display: flex !important;
+            gap: 0px !important;
+            padding-bottom: 43px;
+          }
+
+          .cards {
+            display: flex;
+            flex-direction: column;
+            gap: 40px;
+            padding: 16px;
+            border-radius: 8px;
+            background-color: #f2f2f7;
+
+            @media (max-width: 991px) {
+              width: 100% !important;
+            }
+
+            h4 {
+              margin: 0;
+              padding: 0;
+
+              color: var(--base-text-text-strong, #0c0c0d);
+              font-family: var(--font-neue);
+              font-size: 18px;
+              font-style: normal;
+              font-weight: 700;
+              line-height: 140%;
+            }
+
+            p {
+              margin: 0;
+              padding: 0;
+
+              color: var(--base-text-text-subtlest, #636366);
+              font-family: var(--font-neue);
+              font-size: 14px;
+              font-style: normal;
+              font-weight: 400;
+              line-height: 140%; /* 19.6px */
+            }
+          }
+        }
 
         @media (max-width: 1187px) {
           flex-direction: column;
@@ -1678,7 +1745,6 @@
     }
   }
 }
-
 
 .container-des {
   @media (max-width: 1439px) {

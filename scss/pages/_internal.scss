@@ -690,8 +690,11 @@
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-
   gap: 32px;
+
+  @media(max-width: 1140px) {
+    padding-left: 0px;
+  }
 
   h1 {
     margin: 0;
@@ -754,9 +757,17 @@
     align-items: center;
     padding-top: 48px;
 
+    @media (max-width: 991px) {
+      flex-direction: column;
+    }
+
     .texts-cs {
       // width: 50%;
       width: 588px;
+
+      @media (max-width: 991px) {
+        width: 100%;
+      }
 
       h2 {
         margin: 0;
@@ -801,6 +812,10 @@
     .img-cs {
       width: 50%;
 
+      @media (max-width: 991px) {
+        width: 100%;
+      }
+
       img {
         width: 100%;
         object-fit: cover;
@@ -812,6 +827,11 @@
 .cards-trader {
   display: flex;
   gap: 32px;
+  padding-bottom: 80px;
+
+  @media (max-width: 991px) {
+    flex-wrap: wrap;
+  }
 
   .cards {
     display: flex;
@@ -822,7 +842,7 @@
     border-top-right-radius: 4px;
 
     .img-card {
-      background-color: gray;
+      background-color: #dedede;
       border-top-left-radius: 4px;
       border-top-right-radius: 4px;
 
@@ -843,6 +863,7 @@
         margin: 0;
         padding: 0;
         height: 50px;
+        margin-bottom: 12px;
 
         color: var(--base-text-text-strong, #0c0c0d);
         font-family: var(--font-neue);
@@ -855,7 +876,81 @@
       p {
         margin: 0;
         padding: 0;
+        height: 60px;
+        margin-bottom: 24px;
+
+        color: var(--base-text-text-subtlest, #636366);
+        font-family: var(--font-neue);
+        font-size: rem(14);
+        font-style: normal;
+        font-weight: 400;
+        line-height: 140%;
+      }
+
+      a {
+        text-decoration: none;
+        color: var(--ColorBase-neutral---neutral-600, #636366);
+        font-family: var(--font-neue);
+        font-size: rem(12);
+        font-style: normal;
+        font-weight: 400;
+        line-height: 132%; /* 15.84px */
       }
     }
+  }
+}
+
+.accordions-invest {
+  padding: 80px 0px;
+  background-color: #1e1e20;
+}
+
+.itens-accordion-invest {
+  display: flex;
+  gap: 24px;
+
+  @media (max-width: 1199px) {
+    flex-direction: column;
+    gap: 62px;
+  }
+
+  .title-accordion-invest {
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+
+    @media (max-width: 1199px) {
+      width: 100%;
+    }
+
+    h3 {
+      margin: 0;
+      padding: 0;
+
+      color: var(--base-text-text-inverse, #fff);
+      font-family: var(--font-seido);
+      font-size: rem(28);
+      font-style: normal;
+      font-weight: 400;
+      line-height: 132%;
+    }
+
+    p {
+      margin: 0;
+      padding: 0;
+
+      color: var(--base-text-text-inverse, #fff);
+      font-family: var(--font-neue);
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 140%;
+    }
+  }
+
+  .content-accordions {
+    // border: 1px solid red;
+    width: 100%;
   }
 }
