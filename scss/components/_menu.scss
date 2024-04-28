@@ -44,7 +44,8 @@ body {
       align-items: center;
 
       .logo-mobile {
-        width: 140px;
+        // width: 140px;
+        // filter: invert(1);
         margin-right: 8px;
       }
 
@@ -85,6 +86,7 @@ body {
       //   border: 1px solid var(--grey-scale-02);
       border: 1px solid #d3d3d3;
       border-radius: 4px;
+      background-color: white;
 
       button {
         margin: 0;
@@ -214,7 +216,7 @@ body {
     }
 
     .accordion-item {
-      margin-bottom: 16px;
+      margin-bottom: 0px;
       background: none;
       border: none;
       color: var(--text-white);
@@ -223,18 +225,6 @@ body {
       .accordion-collapse {
         background-color: transparent;
       }
-      /*
-			&.link-externo{
-				display: flex;
-				align-items: center;
-				gap: 8px;
-
-				&::after{
-					content: url("../images/icon/icon-externo.svg");
-					display: block;
-					height: 18px;
-				}
-			}*/
 
       h3 {
         margin: 0;
@@ -242,35 +232,31 @@ body {
       }
 
       .accordion-button {
-        padding: 24px;
+        padding-top: 16px;
+        padding-bottom: 16px;
+
         position: relative;
         color: #666666;
         border-radius: 0;
         background: transparent;
         gap: 10px;
         font-size: rem(20);
-        align-items: start;
         display: flex;
-        flex-direction: column;
-        background-color: #1e524f;
-        // border-top-left-radius: 8px;
-        // border-top-right-radius: 8px;
-        border-radius: 8px;
 
         color: var(--Font-Text-text-negative, #fff);
-
-        /* Menu/Mobile/Canal/Default */
-        font-family: "Sofia Sans";
+        font-family: var(--font-neue);
         font-size: 20px;
         font-style: normal;
         font-weight: 400;
         line-height: 124%; /* 24.8px */
 
+        img {
+          filter: grayscale(1) brightness(18);
+        }
+
         p {
           color: var(--Secondary-brand-40, #d9cdb5);
-
-          /* Body/Paragraph/Body 2 */
-          font-family: Arial;
+          // font-family: Arial;
           font-size: 14px;
           font-style: normal;
           font-weight: 400;
@@ -302,15 +288,15 @@ body {
         }
 
         &:not(.collapsed) {
-          // background: none;
-          // border-bottom: none;
-          // box-shadow: none;
-          // border-bottom: 1px solid #058441;
-          // color: #058441;
+          color: #8148E4;
           border-top-left-radius: 8px;
           border-top-right-radius: 8px;
           border-bottom-left-radius: 0px;
           border-bottom-right-radius: 0px;
+
+          img {
+            filter: unset;
+          }
         }
       }
 
@@ -318,50 +304,47 @@ body {
         padding: 0;
 
         .pages {
-          padding-left: 24px;
-          padding-bottom: 8px;
-          padding-top: 16px;
-          // margin: 16px 0;
+          padding: 32px 24px;
           background-color: #dddddd;
-          border-bottom-left-radius: 8px;
-          border-bottom-right-radius: 8px;
+          border-radius: 8px;
 
           li {
             list-style: none;
-            margin-bottom: 8px;
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
 
-            @media (max-width: 575px) {
-              margin-bottom: 12px;
+            .item-menu-mob {
+              display: flex;
+              gap: 12px;
+
+              .img-item {
+              }
+
+              .text-item {
+                a {
+                  text-decoration: none;
+                  color: var(--estrutura-nav-page-nav-page-default, #47277d);
+                  font-family: "Neue Haas Unica Pro";
+                  font-size: 18px;
+                  font-style: normal;
+                  font-weight: 400;
+                  line-height: 124%; /* 22.32px */
+                }
+
+                p {
+                  color: var(
+                    --estrutura-nav-page-nav-page-description,
+                    #8e8e93
+                  );
+                  font-family: "Neue Haas Unica Pro";
+                  font-size: 12px;
+                  font-style: normal;
+                  font-weight: 400;
+                  line-height: 132%; /* 15.84px */
+                }
+              }
             }
-
-            a {
-              text-decoration: none;
-              //   color: var(--text-white);
-              color: gray;
-
-              color: var(--Menu-Pgina-Text-text-default, #194341);
-
-              /* Menu/Desktop/Canal/Default */
-              font-family: "Sofia Sans";
-              font-size: 18px;
-              font-style: normal;
-              font-weight: 700;
-              line-height: 124%; /* 22.32px */
-            }
-
-            /*
-						&.link-externo{
-							a{
-								display: flex;
-								align-items: center;
-								gap: 8px;
-
-								&::after{
-									content: url("../images/icon/icon-externo.svg");
-									height: 18px;
-								}
-							}
-						}*/
           }
         }
       }
@@ -397,15 +380,14 @@ body {
 
 .mobile-menu-div {
   position: fixed;
-  z-index: 200;
+  z-index: 9999;
   max-width: 500px;
   width: 100%;
   height: 100%;
   transform: translateX(500px);
   transition: 0.6s;
   right: 0;
-  // background-color: var(--primary-01-default);
-  background-color: var(--text-white);
+  background-color: #0c0c0d;
 
   .menu-body {
     display: flex;
@@ -420,18 +402,18 @@ body {
       .toggle-mobile-menu {
         span {
           transform: rotate(45deg);
-          background-color: var(--text-black);
+          background-color: #fff;
 
           &::before {
             top: 0;
             // background: var(--text-whtie);
-            background-color: var(--text-black);
+            background-color: #fff;
             transform: rotate(90deg);
           }
 
           &::after {
             bottom: 0;
-            background-color: var(--text-black);
+            background-color: #fff;
 
             transform: rotate(90deg);
           }
@@ -485,11 +467,21 @@ body {
     color: var(--Button-Primary-Text-text-default, #fff);
     text-align: center;
 
-    /* Button/Large */
-    font-family: "Sofia Sans";
     font-size: 18px;
     font-style: normal;
     font-weight: 400;
     line-height: 100%; /* 18px */
   }
 }
+
+// body.open-menu::after {
+//   content: "";
+//   display: block;
+//   background-color: rgba(0, 0, 0, 0.6);
+//   height: 100%;
+//   width: 100%;
+//   position: fixed;
+//   left: 0px;
+//   top: 0px;
+//   z-index: 190;
+// }

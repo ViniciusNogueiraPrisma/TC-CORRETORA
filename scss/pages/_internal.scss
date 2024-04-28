@@ -666,8 +666,8 @@
       background: rgb(255, 255, 255);
       background: radial-gradient(
         circle,
-        rgba(255, 255, 255, 0) 0%,
-        rgba(0, 0, 0, 0.6278886554621849) 100%
+        rgba(255, 255, 303, 0) -82%,
+        rgba(0, 0, 0, 3.627889) 100%
       );
     }
 
@@ -684,7 +684,7 @@
   top: 0;
   height: 450px;
   padding-bottom: 80px;
-  padding-left: 72px;
+  // padding-left: 72px;
 
   position: absolute;
   display: flex;
@@ -692,7 +692,7 @@
   justify-content: flex-end;
   gap: 32px;
 
-  @media(max-width: 1140px) {
+  @media (max-width: 1140px) {
     padding-left: 0px;
   }
 
@@ -952,5 +952,509 @@
   .content-accordions {
     // border: 1px solid red;
     width: 100%;
+  }
+}
+
+.numbers-sobre {
+  padding: 80px 0px;
+
+  .title-num {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin-bottom: 80px;
+    width: 960px;
+
+    @media (max-width: 1199px) {
+      width: 100%;
+    }
+
+    h2 {
+      margin: 0;
+      padding: 0;
+
+      color: var(--token_color-text---text-strong, #0c0c0d);
+      font-family: var(--font-seido);
+      font-size: rem(36);
+      font-style: normal;
+      font-weight: 500;
+      line-height: 132%;
+    }
+
+    p {
+      margin: 0;
+      padding: 0;
+
+      color: var(--base-text-text-default, #3a3a3c);
+      font-family: var(--font-neue);
+      font-size: rem(18);
+      font-style: normal;
+      font-weight: 400;
+      line-height: 140%;
+    }
+  }
+}
+
+.numbers-container {
+  display: flex;
+  gap: 32px;
+  width: 960px;
+
+  @media (max-width: 1199px) {
+    width: 100%;
+  }
+
+  @media (max-width: 775px) {
+    flex-direction: column;
+    gap: 48px;
+  }
+
+  .number {
+    display: flex;
+    flex-direction: column;
+    width: 340px;
+
+    @media (max-width: 1199px) {
+      width: 100%;
+    }
+
+    h1 {
+      margin: 0;
+      padding: 0;
+
+      color: var(--base-text-color-text-tertiary, #8148e4);
+      font-family: var(--font-seido);
+      font-size: rem(96);
+      font-style: normal;
+      font-weight: 700;
+      line-height: 110%; /* 105.6px */
+
+      @media (max-width: 775px) {
+        font-size: rem(64);
+      }
+    }
+
+    h2 {
+      margin: 0;
+      padding: 0;
+
+      color: var(--base-text-text-subtle, #48484a);
+      font-family: var(--font-seido);
+      font-size: rem(36);
+      font-style: normal;
+      font-weight: 500;
+      line-height: 132%;
+
+      @media (max-width: 775px) {
+        font-size: rem(24);
+      }
+    }
+  }
+}
+
+.n-invista-sozinho {
+  background: linear-gradient(
+      0deg,
+      rgba(12, 12, 13, 0.9) 0%,
+      rgba(12, 12, 13, 0.9) 100%
+    ),
+    url("../../images/banner-tc.jpg") lightgray 50% / cover no-repeat;
+
+  padding-top: 80px;
+
+  .content-invista {
+    display: flex;
+    gap: 49px;
+    align-items: center;
+
+    @media (max-width: 1199px) {
+      flex-direction: column;
+      gap: 24px;
+    }
+
+    .title-invista {
+      width: 588px;
+
+      @media (max-width: 1199px) {
+        width: 100%;
+      }
+
+      h2 {
+        margin: 0;
+        padding: 0;
+        margin-bottom: 16px;
+
+        color: var(--base-text-text-inverse, #fff);
+        font-family: var(--font-seido);
+        font-size: 36px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 132%; /* 47.52px */
+      }
+
+      span {
+        margin: 0;
+        padding: 0;
+
+        color: var(--base-text-color-text-brand, #0f3);
+        font-family: var(--font-neue);
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 140%;
+      }
+
+      p {
+        margin: 0;
+        padding: 0;
+        margin-top: 24px;
+
+        color: var(--base-text-text-inverse, #fff);
+        font-family: var(--font-neue);
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 140%;
+      }
+    }
+
+    .img-n {
+      margin-top: -256px;
+
+      @media (max-width: 1199px) {
+        margin-top: 0px;
+      }
+
+      img {
+        width: 85%;
+
+        @media (max-width: 1199px) {
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+
+.contents-plat {
+  padding-top: 80px;
+
+  .title-plat {
+    display: flex;
+    justify-content: space-between;
+    gap: 24px;
+
+    @media (max-width: 991px) {
+      margin-bottom: 48px;
+    }
+
+    .texts {
+      width: 712px;
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+
+      h2 {
+        margin: 0;
+        padding: 0;
+
+        color: var(--token_color-text---text-strong, #0c0c0d);
+        font-family: var(--font-seido);
+        font-size: 36px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 132%;
+      }
+
+      p {
+        margin: 0;
+        padding: 0;
+
+        color: var(--base-text-text-default, #3a3a3c);
+        font-family: "Neue Haas Unica Pro";
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 140%;
+      }
+    }
+
+    .img-vector {
+      @media (max-width: 991px) {
+        display: none;
+      }
+    }
+  }
+}
+
+.title-plat-2 {
+  margin-bottom: 56px;
+
+  h3 {
+    margin: 0;
+    padding: 0;
+    width: 712px;
+
+    color: var(--token_color-text---text-strong, #0c0c0d);
+    font-family: var(--font-seido);
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 132%;
+
+    @media (max-width: 991px) {
+      width: 100%;
+    }
+  }
+}
+
+.profit-container {
+  padding: 112px 0px;
+  background-color: #f8f8f8;
+}
+
+.bg-black {
+  h2 {
+    color: white !important;
+  }
+
+  p {
+    color: white !important;
+  }
+}
+
+.item-profit {
+  display: flex;
+  gap: 24px;
+  align-items: center;
+  padding-bottom: 80px;
+
+  @media (max-width: 991px) {
+    align-items: start;
+
+    flex-direction: column;
+    gap: 48px;
+
+    &:nth-child(even) {
+      flex-direction: column-reverse;
+    }
+  }
+
+  &:last-child {
+    padding-bottom: 0px;
+  }
+
+  .text {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    width: 588px;
+
+    @media (max-width: 991px) {
+      width: 100%;
+    }
+
+    h2 {
+      margin: 0;
+      padding: 0;
+      color: var(--base-text-text-subtle, #48484a);
+
+      font-family: var(--font-seido);
+      font-size: 36px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 132%; /* 47.52px */
+    }
+
+    p {
+      margin: 0;
+      padding: 0;
+
+      color: var(--base-text-text-subtlest, #636366);
+
+      font-family: var(--font-seido);
+      font-size: 24px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 132%; /* 31.68px */
+    }
+
+    a {
+      width: fit-content;
+      text-decoration: none;
+      background-color: #8148e4;
+      border-radius: 4px;
+      padding: 12px 20px;
+
+      color: var(--token_color-button-primary-solid---btn-label-default, #fff);
+      font-family: var(--font-seido);
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 112%;
+    }
+  }
+
+  .img {
+    width: 50%;
+
+    @media (max-width: 991px) {
+      width: 100%;
+    }
+
+    img {
+      width: 100%;
+      object-fit: cover;
+      border-radius: 8px;
+    }
+  }
+}
+
+.swiper-person {
+  overflow: unset !important;
+
+  .swiper-pagination {
+    position: relative;
+    margin-bottom: 64px;
+
+    .swiper-pagination-bullet {
+      border-radius: 5px;
+      transition: 0.5s;
+      background-color: #8148e4;
+      opacity: 0.8;
+      margin: 0 var(--swiper-pagination-bullet-horizontal-gap, 7px) !important;
+    }
+
+    .swiper-pagination-bullet-active {
+      background-color: #8148e4 !important;
+      transition: 0.5s;
+      width: 75px;
+      opacity: 1 !important;
+    }
+  }
+
+  @media (max-width: 991px) {
+    overflow: hidden !important;
+  }
+}
+
+.person-wrapper {
+  display: grid !important;
+  grid-template-columns: 1fr 1fr 1fr !important;
+  gap: 32px;
+  top: -135px;
+
+  @media (max-width: 991px) {
+    display: flex !important;
+    top: 0px;
+    padding-top: 80px;
+    padding-bottom: 24px;
+    gap: 0px;
+  }
+
+  .swiper-slide {
+    background-color: #ffffff;
+    border-radius: 8px;
+    border: 1px solid #e5e5ea;
+    padding: 32px 24px;
+
+    .img-first {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .texts {
+      margin-top: 40px;
+
+      h3 {
+        margin: 0;
+        padding: 0;
+        height: 64px;
+        margin-bottom: 24px;
+
+        color: var(--cards-Comunidade-card-title-default, #29292b);
+        font-family: "Bw Seido Raw";
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 132%; /* 31.68px */
+      }
+
+      p {
+        // overflow: hidden;
+        // text-overflow: ellipsis;
+        // white-space: nowrap;
+
+        color: var(--component-card-comunidade-card-comunidade-text, #313133);
+        font-family: "Neue Haas Unica Pro";
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 140%; /* 25.2px */
+      }
+    }
+  }
+}
+
+.texts-person {
+  width: 712px;
+  padding-bottom: 80px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+
+  @media (max-width: 991px) {
+    width: 100%;
+  }
+
+  h3 {
+    margin: 0;
+    padding: 0;
+
+    color: var(--base-text-color-text-brand, #0f3);
+    font-family: "Bw Seido Raw";
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 132%;
+  }
+
+  p {
+    margin: 0;
+    padding: 0;
+
+    color: var(--base-text-text-inverse, #fff);
+    font-family: "Neue Haas Unica Pro";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%;
+  }
+
+  span {
+    margin: 0;
+    padding: 0;
+
+    color: var(--base-text-text-inverse, #fff);
+    font-family: "Neue Haas Unica Pro";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%;
+  }
+
+  a {
+    margin-top: 16px;
+    width: fit-content;
+    text-decoration: none;
+    border-radius: 4px;
+    padding: 20px 26px;
+    background-color: #8148e4;
+    color: var(--token_color-button-primary-solid---btn-label-default, #fff);
+    font-family: "Bw Seido Raw";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 112%;
   }
 }
