@@ -1337,6 +1337,12 @@
         line-height: 124%;
         word-wrap: break-word;
         text-decoration: none;
+        transition: 0.5s;
+
+        &:hover {
+          transition: 0.5s;
+          color: #636366;
+        }
 
         @media (max-width: 900px) {
           // font-size: 21px;
@@ -1442,7 +1448,7 @@
               font-family: var(--font-neue);
               font-size: 18px;
               font-style: normal;
-              font-weight: 700;
+              font-weight: 900;
               line-height: 140%;
             }
 
@@ -1999,12 +2005,19 @@
 .accordions-gov {
   margin-top: 40px;
 
+  button[aria-expanded="true"] {
+    background-color: #8148e4 !important;
+
+    .accordion-body {
+    }
+  }
+
   .accordion .accordion-header button {
-    background-color: #1d1d1d !important;
+    background-color: #1d1d1d;
   }
 
   .accordion .accordion-collapse .accordion-body {
-    background-color: #1d1d1d !important;
+    // background-color: #1d1d1d !important;
     border-left: 2px solid #8148e4;
   }
 }
@@ -2036,7 +2049,7 @@
       font-family: "Bw Seido Raw";
       font-size: 36px;
       font-style: normal;
-      font-weight: 500;
+      font-weight: 900;
       line-height: 132%;
     }
 

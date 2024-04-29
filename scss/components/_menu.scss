@@ -185,7 +185,7 @@ body {
   }
 
   .nav-mobile {
-    margin-top: 12px;
+    margin-top: 32px;
     display: flex;
     justify-content: space-between;
     flex-direction: column;
@@ -194,6 +194,7 @@ body {
     width: 100%;
     position: relative;
     max-width: 100%;
+
 
     /*
 		&::after{

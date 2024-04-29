@@ -778,7 +778,7 @@
         font-family: var(--font-seido);
         font-size: rem(36);
         font-style: normal;
-        font-weight: 500;
+        font-weight: 900;
         line-height: 132%;
       }
 
@@ -869,7 +869,7 @@
         font-family: var(--font-neue);
         font-size: rem(18);
         font-style: normal;
-        font-weight: 700;
+        font-weight: 900;
         line-height: 140%;
       }
 
@@ -1162,7 +1162,7 @@
         font-family: var(--font-seido);
         font-size: 36px;
         font-style: normal;
-        font-weight: 500;
+        font-weight: 900;
         line-height: 132%;
       }
 
@@ -1290,7 +1290,7 @@
       font-family: var(--font-seido);
       font-size: 16px;
       font-style: normal;
-      font-weight: 700;
+      font-weight: 400;
       line-height: 112%;
     }
   }
@@ -1457,4 +1457,8 @@
     font-weight: 700;
     line-height: 112%;
   }
+}
+
+.bg-black {
+  background-color: #0c0c0d !important;
 }

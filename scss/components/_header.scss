@@ -783,6 +783,21 @@
     }
   }
 
+  #btn-conta-2 {
+    text-decoration: none;
+    background-color: #8148e4;
+    padding: 12px 20px;
+    border-radius: 4px;
+
+    color: white;
+    font-size: rem(16);
+    font-family: var(--font-seido);
+    font-weight: 700;
+    line-height: 17.92px;
+    word-wrap: break-word;
+    //
+  }
+
   #btn-login {
     display: flex;
     align-items: center;
@@ -803,6 +818,20 @@
     @media (max-width: 1199px) {
       font-size: 0px;
     }
+  }
+
+  #btn-login-2 {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    gap: 16px;
+
+    color: white;
+    font-size: rem(16);
+    font-family: var(--font-neue);
+    font-weight: 700;
+    line-height: 17.92px;
+    word-wrap: break-word;
   }
 }
 
