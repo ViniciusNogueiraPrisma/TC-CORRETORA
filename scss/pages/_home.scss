@@ -2972,6 +2972,11 @@ footer {
 
         a {
           text-decoration: underline !important;
+          // border: 1px solid red;
+
+          @media(max-width: 1659px) {
+            font-size: rem(12);
+          }
         }
       }
 
