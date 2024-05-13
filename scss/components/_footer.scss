@@ -132,8 +132,13 @@
     }
 
     @media (max-width: 767px) {
-      flex-direction: column;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
       gap: 6px;
+    }
+
+    @media (max-width: 488px) {
+      grid-template-columns: 1fr;
     }
 
     > div {

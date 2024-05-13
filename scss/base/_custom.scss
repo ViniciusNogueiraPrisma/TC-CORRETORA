@@ -36,23 +36,42 @@ td {
   font-weight: normal;
 }
 
-.container {
+@media (max-width: 1250px) {
+  .container {
+    padding-left: 32px !important;
+    padding-right: 32px !important;
+  }
+}
 
+@media (max-width: 1199px) {
+  .container {
+    padding-left: 24px !important;
+    padding-right: 24px !important;
+  }
+}
+
+.container {
   @media (min-width: 576px) {
     max-width: 100%;
+    // padding-left: 24px !important;
+    // padding-right: 24px !important;
   }
 
   @media (min-width: 768px) {
     max-width: 820px;
+
+    // padding-left: 24px !important;
+    // padding-right: 24px !important;
   }
 
   @media (min-width: 992px) {
     max-width: 951px;
   }
+
   @media (min-width: 1200px) {
     max-width: 1200px;
-    padding-right: 40px !important;
-    padding-left: 40px !important;
+    // padding-right: 40px !important;
+    // padding-left: 40px !important;
   }
 
   @media (max-width: 575px) {

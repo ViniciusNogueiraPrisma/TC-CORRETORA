@@ -2366,7 +2366,7 @@ footer {
       width: 570px;
       padding-top: 42px;
 
-      @media(max-width: 1659px) {
+      @media (max-width: 1659px) {
         padding-top: 24px;
       }
 
@@ -2491,6 +2491,7 @@ footer {
 
     @media (max-width: 1233px) {
       width: 100%;
+      padding: 32px;
     }
 
     .title-card {
@@ -2584,7 +2585,14 @@ footer {
     align-items: center;
 
     @media (max-width: 1233px) {
+      // flex-direction: column-reverse;
+      flex-direction: row-reverse;
+      align-items: unset;
+    }
+
+    @media (max-width: 991px) {
       flex-direction: column-reverse;
+      align-items: center;
     }
 
     #img-mockup {
@@ -2608,6 +2616,19 @@ footer {
     }
 
     .other-text {
+      @media (max-width: 1233px) {
+        height: fit-content;
+        padding-top: 110px;
+      }
+
+      @media (max-width: 1199px) {
+        padding-top: 70px;
+      }
+
+      @media (max-width: 991px) {
+        padding-top: 0;
+      }
+
       h3 {
         margin: 0;
         padding: 0;
@@ -2632,6 +2653,10 @@ footer {
         font-style: normal;
         font-weight: 400;
         line-height: 140%;
+
+        @media (max-width: 650px) {
+          font-size: rem(16) !important;
+        }
       }
 
       .flex-itens {
@@ -2761,6 +2786,39 @@ footer {
     position: initial !important;
     height: 100%;
 
+    .swiper-pagination {
+      display: none;
+
+      .swiper-pagination-bullet {
+        border-radius: 5px;
+        transition: 0.5s;
+        background-color: #8148e4;
+        opacity: 0.8;
+        margin: 0 var(--swiper-pagination-bullet-horizontal-gap, 7px) !important;
+      }
+
+      .swiper-pagination-bullet-active {
+        background-color: #8148e4 !important;
+        transition: 0.5s;
+        width: 75px;
+        opacity: 1 !important;
+      }
+
+      @media (max-width: 1382px) {
+        display: block;
+        bottom: unset !important;
+        display: flex;
+        justify-content: flex-end;
+        left: 0;
+        right: 0;
+        padding-top: 20px;
+      }
+
+      @media (max-width: 1024px) {
+        justify-content: center;
+      }
+    }
+
     .pagination-invst {
       display: flex;
       justify-content: space-between;
@@ -2788,13 +2846,13 @@ footer {
         display: none;
       }
 
-      @media (max-width: 1199px) {
-        display: flex;
-      }
+      // @media (max-width: 1199px) {
+      //   display: flex;
+      // }
 
-      @media (max-width: 1164px) {
-        display: none;
-      }
+      // @media (max-width: 1164px) {
+      //   display: none;
+      // }
 
       .swiper-button-next {
         position: relative !important;
