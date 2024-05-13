@@ -2186,6 +2186,16 @@ footer {
         line-height: 15.84px;
         word-wrap: break-word;
       }
+
+      a {
+        text-decoration: none;
+        color: white;
+        font-size: rem(12);
+        font-family: var(--font-neue);
+        font-weight: 400;
+        line-height: 15.84px;
+        word-wrap: break-word;
+      }
     }
   }
 }
@@ -2354,8 +2364,11 @@ footer {
       flex-direction: column;
       gap: 40px;
       width: 570px;
-
       padding-top: 42px;
+
+      @media(max-width: 1659px) {
+        padding-top: 24px;
+      }
 
       @media (max-width: 1233px) {
         width: 70%;

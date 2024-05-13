@@ -37,8 +37,6 @@ td {
 }
 
 .container {
-  // padding-right: 40px !important;
-  // padding-left: 40px !important;
 
   @media (min-width: 576px) {
     max-width: 100%;
@@ -53,6 +51,8 @@ td {
   }
   @media (min-width: 1200px) {
     max-width: 1200px;
+    padding-right: 40px !important;
+    padding-left: 40px !important;
   }
 
   @media (max-width: 575px) {

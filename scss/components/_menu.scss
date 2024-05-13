@@ -314,7 +314,8 @@ body {
             display: flex;
             flex-direction: column;
             gap: 16px;
-
+            margin-bottom: 0;
+            
             .item-menu-mob {
               display: flex;
               gap: 12px;
