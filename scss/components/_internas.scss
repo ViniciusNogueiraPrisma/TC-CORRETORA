@@ -1318,7 +1318,7 @@
 
     li {
       a.active {
-        transition: 0.5s;
+        transition: 0.3s;
         color: #7240c9 !important;
         border-bottom: 1px solid #7240c9;
         padding-bottom: 9px;
@@ -1337,10 +1337,10 @@
         line-height: 124%;
         word-wrap: break-word;
         text-decoration: none;
-        transition: 0.5s;
+        transition: 0.3s;
 
         &:hover {
-          transition: 0.5s;
+          transition: 0.3s;
           color: #636366;
         }
 

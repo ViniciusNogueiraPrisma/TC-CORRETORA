@@ -1,21 +1,18 @@
 .table {
-  //   margin: 28px 0 28px;
-  margin-top: 40px;
+  margin-top: 32px;
 
   thead {
     tr {
-      // background-color: var(--primary-01-default);
-      border-bottom: 1px solid var(--text-color-main);
-      // background-color: none !important;
+      border-bottom: 1px solid #3a3a3c;
 
       th {
-        // color: var(--text-white);
-        color: var(--text-color-main);
-        padding: 12px 8px;
-        font-size: rem(14);
-        font-weight: 900;
-        vertical-align: middle;
-        // background-color: var(--bg-green);
+        color: var(--component-table-table-header-text, #1e1e20);
+        // font-family: "Neue Haas Unica Pro";
+        font-size: rem(16);
+        font-style: normal;
+        font-weight: 700;
+        line-height: 140%;
+        padding: 12px 16px;
 
         span {
           font-weight: 400;
@@ -32,21 +29,31 @@
   tbody {
     border-top: none !important;
     tr {
-      border-bottom: 1px solid var(--text-grey-scale-02);
+      border-bottom: 1px solid #aeaeb2;
+
+      &:last-child {
+        border-bottom: 1px solid transparent;
+      }
 
       td {
-        border: none;
-        color: var(--text-color);
-        font-size: rem(14);
-        vertical-align: middle;
-        padding: 12px 8px;
+        // border: none;
+        // color: var(--text-color);
+        // font-size: rem(14);
+        // vertical-align: middle;
+        // padding: 12px 8px;
+
+        color: var(--component-table-table-cell-text, #0c0c0d);
+        font-family: "Neue Haas Unica Pro";
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 140%;
+
+        padding: 12px 16px;
 
         img {
           margin: 0 auto;
           width: 32px;
-
-          // filter: brightness(0) invert(53%) sepia(12%) saturate(531%) hue-rotate(179deg) brightness(103%)
-          //     contrast(93%);
         }
 
         &.not-active {
@@ -60,6 +67,7 @@
 
         &:not(:first-child) {
           text-align: center;
+          vertical-align: middle;
         }
       }
     }
@@ -115,6 +123,78 @@
           text-align: left;
         }
       }
+    }
+  }
+}
+
+.table-fundos {
+  margin: 0;
+
+  margin-top: 32px;
+}
+
+.table-fundos-invest {
+  padding-bottom: 172px;
+
+  .table-title {
+    display: flex;
+    gap: 16px;
+    flex-wrap: wrap;
+
+    h5 {
+      margin: 0;
+      padding: 0;
+
+      color: var(--base-text-text-default, #3a3a3c);
+      font-family: "Neue Haas Unica Pro";
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 140%;
+    }
+  }
+
+  .table-item-color {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+
+    p {
+      margin: 0;
+      padding: 0;
+
+      color: var(--base-text-text-default, #3a3a3c);
+
+      /* Text/LG/Regular */
+      font-family: "Neue Haas Unica Pro";
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 140%; /* 22.4px */
+    }
+
+    .color-yellow {
+      line-height: 0;
+      width: 12px;
+      height: 12px;
+      border-radius: 50%;
+      background: rgba(241, 199, 50, 1);
+    }
+
+    .color-red {
+      line-height: 0;
+      width: 12px;
+      height: 12px;
+      border-radius: 50%;
+      background: rgba(84, 131, 224, 1);
+    }
+
+    .color-blue {
+      line-height: 0;
+      width: 12px;
+      height: 12px;
+      border-radius: 50%;
+      background: #9d2727;
     }
   }
 }
