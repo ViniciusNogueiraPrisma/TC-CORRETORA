@@ -684,16 +684,22 @@
   top: 0;
   height: 450px;
   padding-bottom: 80px;
-  // padding-left: 72px;
-
+  gap: 32px;
   position: absolute;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-  gap: 32px;
 
   @media (max-width: 1140px) {
     padding-left: 0px;
+  }
+
+  @media (max-width: 850px) {
+    width: 100%;
+    left: 0;
+    right: 0;
+    padding-left: 24px !important;
+    padding-right: 24px !important;
   }
 
   h1 {
@@ -858,7 +864,7 @@
 
     .texts-card {
       padding: 16px 0px;
-      border-bottom: 1px solid var(--ColorBase-neutral---neutral-100, #E5E5EA);
+      border-bottom: 1px solid var(--ColorBase-neutral---neutral-100, #e5e5ea);
 
       h3 {
         margin: 0;
