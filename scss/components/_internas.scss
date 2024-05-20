@@ -1300,6 +1300,10 @@
   }
 }
 
+.tabs-investir {
+  background-color: #f8f8f8;
+}
+
 .tab-pane-sis {
   padding-top: 80px;
 
@@ -1310,10 +1314,9 @@
   .nav-tabs {
     display: flex;
     gap: 16px;
-    border-bottom: 1px solid #d1d1d6 !important;
+    border-bottom: 1px solid #aeaeb2 !important;
 
     @media (max-width: 864px) {
-      // flex-direction: column;
     }
 
     @media (max-width: 598px) {
@@ -1334,7 +1337,7 @@
 
       a {
         padding-bottom: 8px;
-        color: #d1d1d6;
+        color: #aeaeb2;
         font-size: rem(16);
         font-family: var(--font-seido);
         font-weight: 700;
@@ -1439,7 +1442,7 @@
             padding: 16px;
             border-radius: 8px;
             height: 100%;
-            background-color: #f2f2f7;
+            background-color: #fff;
 
             @media (max-width: 991px) {
               width: 100% !important;
